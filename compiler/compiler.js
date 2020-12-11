@@ -1,15 +1,15 @@
 "use strict";
-var channel = 'Gazeta';
-var subscribers = 650351;
+let channel = 'Gazeta';
+let subscribers = 650351;
 console.log(channel);
 function sum(a, b) {
     return a + b;
 }
-var anything;
+let anything;
 anything = 12;
 anything = 14;
 function salute(isMorning) {
-    var salutation;
+    let salutation;
     if (isMorning) {
         salutation = 'Good Morning!';
     }
