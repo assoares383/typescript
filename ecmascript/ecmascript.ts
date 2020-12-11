@@ -48,7 +48,7 @@ arrowThis();
 // Parâmetros padrão
 function countdown(
   initial: number = 5,
-  fim: number = initial - 5): void {
+        end: number = initial - 5): void {
 
   console.log(initial);
   while(initial > 0) {

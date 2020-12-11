@@ -36,7 +36,7 @@ thisNorm2();
 const arrowThis = () => console.log(this);
 arrowThis();
 // Parâmetros padrão
-function countdown(initial = 5, fim = initial - 5) {
+function countdown(initial = 5, end = initial - 5) {
     console.log(initial);
     while (initial > 0) {
         initial--;
@@ -49,3 +49,30 @@ countdown(3);
 // Rest & Spread
 const numbers = [1, 10, 3, 7, 9];
 console.log(Math.max(...numbers));
+const group1 = ['nome 1', 'nome 2', 'nome 3'];
+const group2 = ['nome 10', 'nome 99', 'nome 25'];
+const group3 = [...group1, ...group2, 'nome 110'];
+console.log(group3);
+function group(...args) {
+    return args;
+}
+const numbers1 = group(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(numbers1);
+// Destructuring ( Array )
+const characteristics = ['Motor Zetec 1.8', 2020];
+const [motor, age] = characteristics;
+console.log(motor);
+console.log(age);
+// Destructuring ( Object )
+const item = {
+    nome: 'SSD 480GB',
+    preco: 200
+};
+const { nome: n, preco: p } = item;
+console.log(n);
+console.log(p);
+// Template String
+const user = 'ecmascript01';
+const notifications = '9';
+const welcome = `Boas vindas ${user} Notificações: ${notifications}`;
+console.log(welcome);
